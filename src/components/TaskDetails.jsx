@@ -23,13 +23,15 @@ const TaskDetails = () => {
     <Box
       sx={{
         p: 3,
-        maxWidth: 600,
+        maxWidth: 400,
         margin: "0 auto",
+        marginTop: 8,
         width: "90%",
         bgcolor:
           theme.palette.mode === "dark" ? "grey.800" : "background.paper",
         borderRadius: 2,
         boxShadow: 3,
+        overflowWrap: "anywhere",
       }}
     >
       <Typography variant="h4" gutterBottom sx={{ color: "text.primary" }}>

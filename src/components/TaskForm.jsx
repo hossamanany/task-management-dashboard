@@ -34,10 +34,10 @@ const TaskForm = () => {
     try {
       if (id) {
         await dispatch(updateTask(values)).unwrap();
-        navigate(`/tasks/${id}`);
+        navigate(`/details/${values.id}`);
       } else {
         const newTask = await dispatch(addTask(values)).unwrap();
-        navigate(`/tasks/${newTask.id}`);
+        navigate(`/details/${newTask.id}`);
       }
     } catch (error) {
       console.error("Failed to save the task:", error);
